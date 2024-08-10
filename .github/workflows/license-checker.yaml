@@ -3,7 +3,7 @@ name: Chequeo de licencias en proyectos Java con Gradle
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   check:
