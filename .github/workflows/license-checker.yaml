@@ -18,9 +18,10 @@ jobs:
           java-version: 21
       
       - name: License check
-        run: ./gradlew licenseFormatCheck
-      
-      - name: License report
-        run: ./gradlew licenseFormatReport
+        run: ./gradlew generateLicenseReport
+
+      - name: Print license report
+        run: cat build/reports/dependency-license/index.html
+
 
 
