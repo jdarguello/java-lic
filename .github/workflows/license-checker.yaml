@@ -21,7 +21,7 @@ jobs:
         run: ./gradlew generateLicenseReport
 
       - name: Print license report
-        run: cat build/reports/dependency-license/index.html
+        run: cat build/reports/dependency-license/licenses.csv
 
 
 
